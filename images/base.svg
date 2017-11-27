@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="414 147 1440 500" style="enable-background:new 414 147 1440 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#path0_fill_1_);}
+</style>
+<title>Base</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(720 -1169)">
+	<g id="Base">
+		<g transform="translate(-720 1169)">
+			
+				<linearGradient id="path0_fill_1_" gradientUnits="userSpaceOnUse" x1="108.29" y1="1962.2125" x2="109.29" y2="1962.2125" gradientTransform="matrix(8.817460e-14 500 1440 -3.061620e-14 -2825172 -52829)">
+				<stop  offset="0" style="stop-color:#E36E55"/>
+				<stop  offset="1" style="stop-color:#D78F52"/>
+			</linearGradient>
+			<path id="path0_fill" class="st0" d="M-306,1316H834.5l299.5,500H-306V1316z"/>
+		</g>
+	</g>
+</g>
+</svg>
