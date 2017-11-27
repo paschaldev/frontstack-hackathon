@@ -2,7 +2,7 @@
  * Author: Ezeugwu Paschal
  *
  * Description: Frontstack responsive web design hackathon.
-*/
+ */
 /*
  * Author: Ezeugwu Paschal
  *
@@ -85,7 +85,7 @@
 
 body {
   background-color: #FFFFFF;
-  font-family: 'Catamaran', sans-serif;
+  font-family: "Catamaran", sans-serif;
   max-width: 100%;
 }
 
@@ -273,7 +273,40 @@ header .navbar {
 .nav-items > ul li {
   margin-bottom: 20px;
 }
+.nav-items > ul li:not(.is-btn) a {
+  position: relative;
+}
+.nav-items > ul li:not(.is-btn) a::before, .nav-items > ul li:not(.is-btn) a::after {
+  content: '';
+  position: absolute;
+  width: 40%;
+  background-color: #fff;
+  height: 1px;
+  opacity: 0;
+  -webkit-transition: all ease-in 0.4s;
+  -moz-transition: all ease-in 0.4s;
+  -ms-transition: all ease-in 0.4s;
+  -o-transition: all ease-in 0.4s;
+  transition: all ease-in 0.4s;
+}
+.nav-items > ul li:not(.is-btn) a::before {
+  top: -5px;
+  left: -50px;
+}
+.nav-items > ul li:not(.is-btn) a::after {
+  bottom: -3px;
+  right: -50px;
+}
+.nav-items > ul li:not(.is-btn) a:hover::before {
+  left: 0;
+  opacity: 1;
+}
+.nav-items > ul li:not(.is-btn) a:hover::after {
+  right: 0;
+  opacity: 1;
+}
 .nav-items > ul a {
+  position: relative;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1rem;
@@ -320,6 +353,9 @@ header .navbar {
 
 .btn-offwhite {
   background-color: rgba(255, 255, 255, 0.2);
+}
+.btn-offwhite:hover {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .btn-outline {
@@ -414,6 +450,7 @@ footer {
 
 .img-bg {
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: 50% 50%;
   z-index: 1;
 }
@@ -487,6 +524,10 @@ footer {
   background-color: rgba(4, 4, 4, 0.5);
   width: 100%;
   height: 100%;
+}
+
+.location-item-inner {
+  border: 1px solid #fff;
 }
 
 .location-item-content {
