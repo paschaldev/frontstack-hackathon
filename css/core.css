@@ -271,7 +271,7 @@ header .navbar {
   padding: 0;
 }
 .nav-items > ul li {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .nav-items > ul li:not(.is-btn) a {
   position: relative;
