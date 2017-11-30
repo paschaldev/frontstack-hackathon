@@ -6,6 +6,7 @@
  @import 'variables';
  @import 'mixins';
  @import 'responsive';
+ @import 'animations';
 
  %gradient-bg{
 
@@ -250,6 +251,33 @@
  		li{
 
  			margin-bottom: 30px;
+ 			animation-duration: 0s;
+
+ 			//Delay on mobile
+ 			@media(min-width: 900px){
+
+ 				animation-duration: 1.5s;
+
+ 				&:first-of-type{
+
+ 					animation-delay: 0.2s;
+ 				}
+
+ 				&:nth-of-type(2){
+
+ 					animation-delay: 0.4s;
+ 				}
+
+ 				&:nth-of-type(3){
+
+ 					animation-delay: 0.6s;
+ 				}
+
+ 				&:last-of-type{
+
+ 					animation-delay: 1s;
+ 				}
+ 			}
 
  			&:not(.is-btn){
 
@@ -481,6 +509,7 @@
  	padding: 20px 0;
  	background-image: url('http://res.cloudinary.com/eloquence/image/upload/v1511769535/frontstack-hackathon/charlie-costello-301722.jpg');
  	background-repeat: no-repeat;
+ 	background-attachment: fixed;
 
  	@media(min-width: 900px){
 

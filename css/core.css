@@ -71,6 +71,85 @@
   }
 }
 
+.fade-in {
+  -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
+  animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
+}
+
+.slide-in-top {
+  -webkit-animation: slide-in-top 1.5s both;
+  animation: slide-in-top 1.5s both;
+}
+
+.slide-in-bottom {
+  -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .gradient-bg, .btn-outline:hover {
   background-color: #e07455;
   /* IE9, iOS 3.2+ */
@@ -282,6 +361,24 @@ header .navbar {
 }
 .nav-items > ul li {
   margin-bottom: 30px;
+  animation-duration: 0s;
+}
+@media (min-width: 900px) {
+  .nav-items > ul li {
+    animation-duration: 1.5s;
+  }
+  .nav-items > ul li:first-of-type {
+    animation-delay: 0.2s;
+  }
+  .nav-items > ul li:nth-of-type(2) {
+    animation-delay: 0.4s;
+  }
+  .nav-items > ul li:nth-of-type(3) {
+    animation-delay: 0.6s;
+  }
+  .nav-items > ul li:last-of-type {
+    animation-delay: 1s;
+  }
 }
 .nav-items > ul li:not(.is-btn) a {
   position: relative;
@@ -470,6 +567,7 @@ footer {
   padding: 20px 0;
   background-image: url("http://res.cloudinary.com/eloquence/image/upload/v1511769535/frontstack-hackathon/charlie-costello-301722.jpg");
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 @media (min-width: 900px) {
   .bg-borno {
