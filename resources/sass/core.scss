@@ -123,16 +123,26 @@
 
  	position: relative;
  	z-index: 1;
- 	top: ( $hero-form-pad-y * 2 ) - $hero-form-border-width;
+ 	top: ( ( $hero-form-pad-y * 2) - 10px) - $hero-form-border-width;
+
+ 	@media(min-width: 900px){
+
+ 		top: ( $hero-form-pad-y * 2 ) - $hero-form-border-width;
+ 	}
 
  	input{
 
- 		padding: $hero-form-pad-y $hero-form-pad-x;
+ 		padding: ($hero-form-pad-y - 10px) ($hero-form-pad-x - 10px);
  		border: $hero-form-border-width solid $hero-form-border-color;
  		border-radius: $hero-form-border-radius;
  		line-height: 30px;
  		width: 100%;
  		text-align: center;
+
+ 		@media(min-width:900px){
+
+ 			padding: $hero-form-pad-y $hero-form-pad-x;
+ 		}
 
  		&,
  		&::placeholder{
@@ -372,7 +382,8 @@
 
  	&:hover{
 
- 		background-color: #E46F55;
+ 		@extend %gradient-bg;
+ 		border: 2px solid;
  		color: #fff;
  	}
  }

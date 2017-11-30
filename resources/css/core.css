@@ -1,0 +1,470 @@
+/*
+ * Author: Ezeugwu Paschal
+ *
+ * Description: Frontstack responsive web design hackathon.
+ */
+/*
+ * Author: Ezeugwu Paschal
+ *
+ * Description: Frontstack responsive web design hackathon.
+*/
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px; }
+  @media (min-width: 600px) {
+    .container {
+      max-width: 564px; } }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px; } }
+  @media (min-width: 900px) {
+    .container {
+      max-width: 868px; } }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px; } }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px; }
+  .row::before, .row::after {
+    content: '';
+    display: table; }
+  .row::after {
+    clear: both; }
+
+.col-1-3 {
+  float: left;
+  display: block;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  flex-grow: 1;
+  flex-shrink: 1; }
+  @media (min-width: 600px) {
+    .col-1-3 {
+      width: 33.3333333333%;
+      flex-basis: auto;
+      height: auto; } }
+  @media (min-width: 1200px) {
+    .col-1-3 {
+      flex-basis: 0; } }
+
+.gradient-bg {
+  background-color: #e07455;
+  /* IE9, iOS 3.2+ */
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj48c3RvcCBzdG9wLWNvbG9yPSIjZWI1NzU3IiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiNkNTkxNTIiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0, #eb5757), color-stop(1, #d59152));
+  /* Android 2.3 */
+  background-image: -webkit-linear-gradient(top, #eb5757 0%, #d59152 100%);
+  /* IE10+ */
+  background-image: linear-gradient(to bottom, #eb5757 0%, #d59152 100%);
+  background-image: -ms-linear-gradient(top, #eb5757 0%, #d59152 100%); }
+
+body {
+  background-color: #FFFFFF;
+  font-family: "Catamaran", sans-serif;
+  max-width: 100%; }
+
+header {
+  position: relative; }
+  header .navbar {
+    width: 100%;
+    padding-top: 26px;
+    padding-bottom: 26px; }
+
+@media (min-width: 900px) {
+  .logo-block {
+    margin-right: 25%; } }
+@media (min-width: 1200px) {
+  .logo-block {
+    margin-right: 31%; } }
+
+.logo {
+  width: 100px;
+  height: auto;
+  -webkit-transition: ease width 0.4s;
+  -moz-transition: ease width 0.4s;
+  -ms-transition: ease width 0.4s;
+  -o-transition: ease width 0.4s;
+  transition: ease width 0.4s; }
+  @media (min-width: 900px) {
+    .logo {
+      width: 100px; } }
+
+.hero {
+  color: #fff;
+  text-align: center;
+  margin-bottom: -22px; }
+  @media (min-width: 900px) {
+    .hero {
+      padding-top: 50px; } }
+
+.hero-text {
+  font-size: 32px;
+  font-weight: 900; }
+  @media (min-width: 900px) {
+    .hero-text {
+      font-size: 64px;
+      padding-left: 50px;
+      padding-right: 50px; } }
+  @media (min-width: 1200px) {
+    .hero-text {
+      padding-left: 200px;
+      padding-right: 200px; } }
+
+.hero-sub-text {
+  font-size: 19px;
+  margin: 0;
+  margin-bottom: -17px;
+  font-weight: 500; }
+  @media (min-width: 900px) {
+    .hero-sub-text {
+      font-size: 24px; } }
+
+.hero-text,
+.hero-sub-text {
+  -webkit-transition: ease font-size 0.4s;
+  -moz-transition: ease font-size 0.4s;
+  -ms-transition: ease font-size 0.4s;
+  -o-transition: ease font-size 0.4s;
+  transition: ease font-size 0.4s; }
+
+.hero-form {
+  position: relative;
+  z-index: 1;
+  top: 37px; }
+  .hero-form input {
+    padding: 20px 50px;
+    border: 3px solid #F2994A;
+    border-radius: 50px;
+    line-height: 30px;
+    width: 100%;
+    text-align: center; }
+    .hero-form input, .hero-form input::placeholder {
+      color: #C3C0C0; }
+    .hero-form input:focus {
+      outline: 0; }
+    @media (min-width: 480px) {
+      .hero-form input {
+        width: 80%; } }
+    @media (min-width: 1200px) {
+      .hero-form input {
+        width: 50%; } }
+
+/** Nav Btn **/
+@media (min-width: 900px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    nav li > a.btn {
+      font-weight: 400; } }
+
+.nav-btn {
+  display: inline-block;
+  background: none;
+  float: right; }
+  .nav-btn:hover {
+    cursor: pointer; }
+  @media (min-width: 900px) {
+    .nav-btn {
+      display: none; } }
+
+.nav-btn__icon {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px; }
+  .nav-btn__icon::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../images/menu.svg") no-repeat;
+    background-size: contain; }
+
+.nav-items {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  z-index: 10;
+  display: none; }
+  .nav-items.open {
+    display: block;
+    padding-bottom: 28px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+    @media (min-width: 900px) {
+      .nav-items.open {
+        padding-bottom: 0;
+        border: none; } }
+  .nav-items > ul {
+    list-style-type: none;
+    padding: 0; }
+    .nav-items > ul li {
+      margin-bottom: 30px; }
+      .nav-items > ul li:not(.is-btn) a {
+        position: relative; }
+        .nav-items > ul li:not(.is-btn) a::before, .nav-items > ul li:not(.is-btn) a::after {
+          content: '';
+          position: absolute;
+          width: 40%;
+          background-color: #fff;
+          height: 1px;
+          opacity: 0;
+          -webkit-transition: all ease-in 0.4s;
+          -moz-transition: all ease-in 0.4s;
+          -ms-transition: all ease-in 0.4s;
+          -o-transition: all ease-in 0.4s;
+          transition: all ease-in 0.4s; }
+        .nav-items > ul li:not(.is-btn) a::before {
+          top: -5px;
+          left: -50px; }
+        .nav-items > ul li:not(.is-btn) a::after {
+          bottom: -3px;
+          right: -50px; }
+        .nav-items > ul li:not(.is-btn) a:hover::before {
+          left: 0;
+          opacity: 1; }
+        .nav-items > ul li:not(.is-btn) a:hover::after {
+          right: 0;
+          opacity: 1; }
+    .nav-items > ul a {
+      position: relative;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1rem;
+      color: #fff;
+      font-weight: 700; }
+  @media (min-width: 900px) {
+    .nav-items {
+      display: inline-block;
+      position: relative; }
+      .nav-items > ul li:not(.is-btn) {
+        float: left;
+        margin-right: 33px; }
+      .nav-items > ul li.is-btn {
+        float: right; }
+      .nav-items > ul a {
+        font-size: 14px; } }
+
+/** Buttons **/
+.btn {
+  padding: 10px 30px;
+  -webkit-transition: ease-in-out all 0.2s;
+  -moz-transition: ease-in-out all 0.2s;
+  -ms-transition: ease-in-out all 0.2s;
+  -o-transition: ease-in-out all 0.2s;
+  transition: ease-in-out all 0.2s; }
+  .btn:hover {
+    cursor: pointer;
+    letter-spacing: 3px; }
+  .btn:focus {
+    outline: 0; }
+
+.btn-round {
+  border-radius: 50px; }
+
+.btn-offwhite {
+  background-color: rgba(255, 255, 255, 0.2); }
+  .btn-offwhite:hover {
+    background-color: rgba(255, 255, 255, 0.5); }
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #E36F55;
+  color: #E46F55;
+  padding: 18px 48px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 500; }
+  .btn-outline:hover {
+    background-color: #E46F55;
+    color: #fff; }
+
+/** Desc **/
+.desc {
+  margin-top: 70px; }
+  @media (min-width: 900px) {
+    .desc {
+      margin-top: 150px; } }
+  @media (min-width: 1200px) {
+    .desc {
+      padding-left: 125px;
+      padding-right: 125px; } }
+
+.desc-title {
+  line-height: 29px;
+  color: #C3C0C0;
+  letter-spacing: 4px; }
+  @media (min-width: 900px) {
+    .desc-title {
+      font-size: 18px; } }
+
+.desc-content {
+  font-size: 18px;
+  line-height: 33px; }
+  @media (min-width: 900px) {
+    .desc-content {
+      font-size: 24px;
+      line-height: 39px; } }
+
+/* Blog **/
+.blog {
+  padding: 20px 50px; }
+
+.blog-note {
+  color: #FEBE61;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 14px; }
+  @media (min-width: 900px) {
+    .blog-note {
+      font-size: 18px; } }
+
+.blog-title {
+  font-size: 50px;
+  line-height: 55px;
+  font-weight: 700; }
+  @media (min-width: 900px) {
+    .blog-title {
+      font-size: 72px;
+      line-height: 77px; } }
+
+/* Footer */
+footer {
+  font-size: 14px;
+  color: #A9A9A9;
+  font-weight: 700;
+  line-height: 23px;
+  padding: 25px 0; }
+
+.img-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  z-index: 1; }
+
+.bg-borno {
+  position: relative;
+  padding: 20px 0;
+  background-image: url("http://res.cloudinary.com/eloquence/image/upload/v1511769535/frontstack-hackathon/charlie-costello-301722.jpg");
+  background-repeat: no-repeat; }
+  @media (min-width: 900px) {
+    .bg-borno {
+      padding: 40px 0; } }
+  @media (min-width: 1200px) {
+    .bg-borno {
+      padding: 100px 0; } }
+  .bg-borno::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: url("../images/base.png") no-repeat 100%;
+    background-size: cover; }
+    @media (min-width: 768px) {
+      .bg-borno::before {
+        width: 50%; } }
+    @media (min-width: 900px) {
+      .bg-borno::before {
+        width: 55%; } }
+    @media (min-width: 1200px) {
+      .bg-borno::before {
+        width: 47%; } }
+
+/* Location **/
+@media (min-width: 768px) {
+  .locations {
+    padding-left: 100px;
+    padding-right: 80px; } }
+
+.location-item {
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px; }
+  @media (min-width: 1200px) {
+    .location-item {
+      min-height: 400px; } }
+  .location-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(4, 4, 4, 0.5);
+    width: 100%;
+    height: 100%; }
+  .location-item:hover .location-item-inner {
+    border-color: #fff; }
+
+.location-item-inner {
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  min-height: 300px;
+  -webkit-transition: ease all 0.4s;
+  -moz-transition: ease all 0.4s;
+  -ms-transition: ease all 0.4s;
+  -o-transition: ease all 0.4s;
+  transition: ease all 0.4s; }
+  @media (min-width: 1200px) {
+    .location-item-inner {
+      min-height: 400px; } }
+
+.location-item-content {
+  position: absolute;
+  z-index: 1;
+  margin: 10px 34px;
+  bottom: 30px;
+  font-weight: 700;
+  font-size: 18px; }
+
+.location-item-title {
+  margin-bottom: 5px; }
+
+.location-item-desc {
+  margin: 0;
+  color: #D78E52; }
+
+.location-item__bauchi {
+  background-image: url("http://res.cloudinary.com/eloquence/image/upload/v1511769530/frontstack-hackathon/manuel-moreno-39516.jpg"); }
+
+.location-item__jos {
+  background-image: url("http://res.cloudinary.com/eloquence/image/upload/v1511769536/frontstack-hackathon/nitin-garg-327400.jpg"); }
+
+.location-item__abuja {
+  background-image: url("http://res.cloudinary.com/eloquence/image/upload/v1511769533/frontstack-hackathon/gabriel-gurrola-125352.jpg"); }
+
+.text-center {
+  text-align: center; }
+
+.float-right {
+  float: right; }
+
+.overflow-hide {
+  overflow: hidden; }
+
+.text-white {
+  color: #fff; }
+
+.py-4 {
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
+
+.my-5 {
+  margin-top: 5rem;
+  margin-bottom: 5rem; }
+
+/*# sourceMappingURL=core.css.map */
