@@ -469,9 +469,9 @@ header .navbar {
   background-color: transparent;
   border: 2px solid #E36F55;
   color: #E46F55;
-  padding: 18px 48px;
-  font-size: 18px;
-  letter-spacing: 2px;
+  padding: 15px 30px;
+  font-size: 15px;
+  letter-spacing: 1px;
   font-weight: 500;
 }
 .btn-outline:hover {
